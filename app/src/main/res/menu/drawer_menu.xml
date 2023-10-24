@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmento_soma"
+        android:title="@string/label_soma" />
+    <item
+        android:id="@+id/fragmento_subtracao"
+        android:title="@string/label_subtracao" />
+    <item
+        android:id="@+id/fragmento_divisao"
+        android:title="@string/label_divisao" />
+    <item
+        android:id="@+id/fragmento_multiplicacao"
+        android:title="@string/label_multiplicacao" />
+    <item
+        android:id="@+id/fragmento_potenciacao"
+        android:title="@string/label_potenciacao" />
+
+</menu>

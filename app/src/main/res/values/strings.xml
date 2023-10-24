@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="texto_principal_main">Bem vindo ao Calculator!</string>
+    <string name="label_soma">SOMA</string>
+    <string name="label_subtracao">SUBTRAÇÃO</string>
+    <string name="label_divisao">DIVISÃO</string>
+    <string name="label_multiplicacao">MULTIPLICAÇÃO</string>
+    <string name="label_potenciacao">POTENCIAÇÃO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="abrir_drawer">Abrir</string>
+    <string name="fechar_drawer">Fechar</string>
+    <string name="hint_login">Informe o login</string>
+    <string name="hint_senha">Informe a senha</string>
+    <string name="check_robo">Não sou um robo.</string>
+    <string name="botao_login">Logar</string>
+    <string name="botao_calcular">Calcular</string>
+    <string name="texto_resultado">Resultado</string>
+</resources>

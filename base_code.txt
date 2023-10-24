@@ -1,0 +1,35 @@
+1.Make step by step
+
+Create a new constraint layout that we'll put 
+all the edits into.
+refactor these news constraint id = constraint_layout_input_ " .. "
+
+EditText id = primeiro_valor
+EditText id = segundo_valor
+Button id = botao_calcular
+
+- Ajust then to Chains >
+settings in packet
+
+- Settings of position layouts
+primeiro_valor = top 0 , right 176, bottom 10, left 175
+segundo_valor = top 0 , right 176, bottom 90, left 175
+botao_calcular = top 0 , right 150, bottom 0, left 149
+
+- They heigths
+EditText layout_width = 60dp , layout_heigth = 50dp
+Button = wrap_content both of then
+
+
+- After all add an TextView
+TextView id = calculoResultado
+TextView textSize = 20dp
+TextView layout_width = match_parent, layout_height = wrap_content
+TextView text = none
+TextView allignText = center
+
+** ATENTION **
+I migth test first after I've created many inputs with the 
+same id's 
+
+

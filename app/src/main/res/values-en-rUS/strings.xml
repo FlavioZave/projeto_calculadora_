@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="texto_principal_main">Welcome to Calculator!</string>
+    <string name="label_soma">SUM</string>
+    <string name="label_subtracao">SUBTRACTION</string>
+    <string name="label_divisao">DIVISION</string>
+    <string name="label_multiplicacao">MULTIPLICATION</string>
+    <string name="label_potenciacao">POTENTIATION</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="abrir_drawer">Open</string>
+    <string name="fechar_drawer">Close</string>
+    <string name="hint_login">Your login</string>
+    <string name="hint_senha">Your password</string>
+    <string name="check_robo">Im not a robot.</string>
+    <string name="botao_login">Login</string>
+    <string name="botao_calcular">Calculate</string>
+    <string name="texto_resultado">Result</string>
+</resources>
