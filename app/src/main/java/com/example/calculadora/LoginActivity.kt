@@ -9,14 +9,20 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val analytics = FirebaseAnalytics.getInstance(this)
-        analytics.setAnalyticsCollectionEnabled(true)
+        val analytics_2 = FirebaseAnalytics.getInstance(this)
+        analytics_2.setAnalyticsCollectionEnabled(true)
+
+        lateinit var analytics: FirebaseAnalytics
+        analytics = Firebase.analytics
+
 
         val botao_login: Button = findViewById(R.id.botao_login)
         val login: EditText = findViewById(R.id.campo_login)

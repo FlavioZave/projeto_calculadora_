@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
 
+        val analytics_2 = FirebaseAnalytics.getInstance(this)
+        analytics_2.setAnalyticsCollectionEnabled(true)
+
+        lateinit var analytics: FirebaseAnalytics
+        analytics = Firebase.analytics
+
         val navigation: NavigationView = findViewById(R.id.navigation_view)
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
@@ -63,8 +69,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.fragmento_potenciacao -> supportFragmentManager
                     .beginTransaction()
                     .replace(R.id.fragment_container_view, PotenciacaoFragment())
-                    .commit
-                ()
+                    .commit()
+
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true

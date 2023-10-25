@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
+    id("com.google.firebase.appdistribution")
 }
 
 android {
@@ -28,6 +29,34 @@ android {
             )
         }
     }
+    buildTypes {
+        release {
+            firebaseAppDistribution {
+                releaseNotesFile = "/path/to/releasenotes.txt"
+                testers = "ali@example.com, bri@example.com, cal@example.com"
+            }
+        }
+    }
+
+
+    flavorDimensions ("version")
+    productFlavors {
+        demo {
+            dimension ("version")
+            firebaseAppDistribution {
+                releaseNotes="Release notes for demo version"
+                testers="demo@testers.com"
+            }
+        }
+        full {
+            dimension ("version")
+            firebaseAppDistribution {
+                releaseNotes="Release notes for full version"
+                testers="full@testers.com"
+            }
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
